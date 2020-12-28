@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Vollkorn', serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: hsl(0, 0%, 95%);
+}
+
+.cv-container {
+  width: min(70%, 960px);
+  background: white;
+  padding-bottom: 150px;
+}
+
+#cv-header {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.person {
+  flex-basis: 50%;
+}
+
+.person div {
+  margin: 10px 0;
+}
+
+.person-name {
+  display: flex;
+  font-size: 36px;
+  font-weight: bold;
+  color: hsl(263, 13%, 27%);
+}
+
+.person-title {
+  font-size: 24px;
+  color: hsl(263, 13%, 27%, 80%);
+}
+
+.thick-line {
+  width: 100%;
+  height: 5px;
+  background: hsl(263, 13%, 27%);
+}
+
+.cv-contact {
+  flex-basis: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 18px;
+  color: hsl(263, 13%, 27%, 80%); 
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item > *{
+  margin: 0 10px;
+}
+
+.contact-content {
+  margin-left: 15px;
+  text-align: left;
+}
+
+#cv-profile {
+  width: 80%;
+  margin: 20px auto 0;
+  margin-bottom: 10px;
+  padding: 20px 0 0 0;
+  color: hsl(263, 13%, 27%, 90%);
+}
+
+.section-title {
+  display: inline-block;
+  padding: 5px 40px;
+  margin: 15px 20px 15px 0;
+  background: hsl(263, 13%, 27%);
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+}
+
+#cv-experience {
+  width: 80%;
+  margin: 20px auto 0;
+  padding: 20px 0;
+}
+
+#job-list {
+  margin: 20px 0;
+}
+
+.job-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  border-left: 5px solid hsl(263, 13%, 27%, 70%);
+  color: hsl(263, 13%, 35%);
+}
+
+.job-item input {
+  width: 70%;
+}
+
+.job-title {
+  display: flex;
+  align-items: center;
+}
+
+.job-title > p {
+  margin-right: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.job-company-date {
+  display: flex;
+  align-items: center;
+}
+
+.job-company-date > * {
+  margin: 10px 0 ;
+  margin-right: 10px;
+}
+
+.job-company-date > svg {
+  margin-left: 20px;
+}
+
+.job-control {
+  position: absolute;
+  flex-basis: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  transform: translateX(100%);
+}
+
+.job-control > svg {
+  margin: 10px 0;
+}
+
+.job-description {
+  display: flex;
+  align-items: center;
+}
+
+.job-description > p {
+  margin: 10px 0 ;
+  margin-right: 10px;
+}
+
+.job-description > svg {
+  margin-left: 20px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.big {
+  width: 32px;
+  height: 32px;
+}
+
+.medium {
+  width: 24px;
+  height: 24px;
+}
+
+.small {
+  width: 18px;
+  height: 18px;
+}
+
+.fill {
+  fill:hsl(199, 98%, 30%);
+}
+
+.stroke {
+  stroke: hsl(199, 98%, 30%);
+}
+
+.fill:hover {
+  fill: hsl(199, 98%, 55%);
+}
+
+.stroke:hover {
+  stroke: hsl(199, 98%, 55%);;
+}
+
+#toggle-mode {
+  position: fixed;
+  margin: 20px;
+  left: 50%;
+  bottom: 0;
+  display: flex;
+  transform: translateX(-50%);
+  background: hsl(263, 13%, 40%, 50%);
+  color: white;
+  cursor: pointer;
+}
+
+#toggle-mode div:hover {
+  background: hsl(263, 13%, 27%, 80%);
+}
+
+#toggle-preview, #toggle-edit {
+  padding: 10px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.mode-active {
+  background: hsl(263, 13%, 27%, 50%);
+}
+
+input, textarea {
+  width: 80%;
+  padding: 10px;
+  color: hsl(263, 13%, 35%);
+}
+
+textarea {
+  max-width: 100%;
+  max-height: 350px;
+}

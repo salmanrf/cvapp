@@ -1,0 +1,23 @@
+.flex {
+    display: flex;
+}
+
+.flex-jc-c {
+    justify-content: center;
+}
+
+.flex-jc-sb {
+    justify-content: space-between;
+}
+
+.flex-jc-se {
+    justify-content: space-evenly;
+}
+
+.flex-dir-rr {
+    flex-direction: row-reverse;
+}
+
+.flex-ai-c {
+    align-items: center;
+}
